@@ -13,7 +13,7 @@ A macOS simple and efficient text copying tool that makes your copy operations m
 To compile the program, use the following command:
 
 ```bash
-clang -framework ApplicationServices -o select_copy select_copy.c
+clang -framework ApplicationServices -framework Cocoa -framework Foundation -framework QuartzCore -o select_copy select_copy.m
 ./select_copy
 ```
 
